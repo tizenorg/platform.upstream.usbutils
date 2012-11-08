@@ -4,7 +4,6 @@ Release:        1
 License:        GPL-2.0+
 Url:            http://www.linux-usb.org/
 Source:         http://downloads.sourceforge.net/linux-usb/%{name}-%{version}.tar.xz
-Source1001:     usbutils.manifest
 
 Summary:        Linux USB utilities
 Group:          Applications/System
@@ -20,7 +19,6 @@ USB bus.
 %setup -q
 
 %build
-cp %{SOURCE1001} .
 %configure \
 	--datadir=%{_libdir}/usbutils
 
@@ -34,7 +32,6 @@ rm -f %{buildroot}%{_libdir}/usbutils/usb.ids
 %docs_package
 
 %files
-%manifest usbutils.manifest
 %{_sbindir}/*
 %{_bindir}/*
 %{_datadir}/*
