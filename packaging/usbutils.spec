@@ -20,19 +20,16 @@ USB bus.
 
 %build
 %configure \
-	--datadir=%{_libdir}/usbutils
+	--datadir=%{_datadir}/hwdata \
+    --disable-usbids
 
 make %{?_smp_mflags}
 
 %install
 make install DESTDIR=%{buildroot} pkgconfigdir=/usr/share/pkgconfig
 
-rm -f %{buildroot}%{_libdir}/usbutils/usb.ids
-
 %docs_package
 
 %files
-%{_sbindir}/*
 %{_bindir}/*
 %{_datadir}/*
-#%{_libdir}/usbutils/usb.ids
