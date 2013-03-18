@@ -1,3 +1,6 @@
+* Mon Mar 18 2013 Anas Nashif <anas.nashif@intel.com> submit/trunk/20130305.081529@69729f5
+- Update package groups
+
 * Tue Mar 05 2013 Anas Nashif <anas.nashif@intel.com> upstream/006@41cfb82
 - set datadir to hwdata
 
