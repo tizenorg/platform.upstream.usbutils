@@ -6,7 +6,7 @@ Url:            http://www.linux-usb.org/
 Source:         http://downloads.sourceforge.net/linux-usb/%{name}-%{version}.tar.xz
 
 Summary:        Linux USB utilities
-Group:          Applications/System
+Group:          Base/Device Management
 BuildRequires:  autoconf
 BuildRequires:  libtool
 BuildRequires:  pkgconfig(libusb-1.0)
@@ -31,5 +31,6 @@ make install DESTDIR=%{buildroot} pkgconfigdir=/usr/share/pkgconfig
 %docs_package
 
 %files
+%license COPYING
 %{_bindir}/*
 %{_datadir}/*
