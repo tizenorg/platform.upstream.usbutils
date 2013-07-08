@@ -1,0 +1,8 @@
+Change-Id: I7ac07c9694904426d6be8ec8c33eadf06e8735d0
+Code-Review+2: Ryan Ware <ware@linux.intel.com>
+Verified+1: Ryan Ware <ware@linux.intel.com>
+Submitted-by: Ryan Ware <ware@linux.intel.com>
+Submitted-at: Mon, 08 Jul 2013 09:39:35 -0700
+Reviewed-on: https://review.tizen.org/gerrit/4888
+Project: platform/upstream/usbutils
+Branch: refs/heads/tizen
