@@ -6,8 +6,8 @@
 /* Define to 1 if you have the <inttypes.h> header file. */
 #undef HAVE_INTTYPES_H
 
-/* Define to 1 if you have the `usb-1.0' library (-lusb-1.0). */
-#undef HAVE_LIBUSB_1_0
+/* Define to 1 if you have the `libusb_strerror' function. */
+#undef HAVE_LIBUSB_STRERROR
 
 /* Define to 1 if you have the <memory.h> header file. */
 #undef HAVE_MEMORY_H
