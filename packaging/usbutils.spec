@@ -1,10 +1,10 @@
 Name:           usbutils
-Version:        006
-Release:        1
+Version:        007
+Release:        0
 License:        GPL-2.0+
 Url:            http://www.linux-usb.org/
-Source:         http://downloads.sourceforge.net/linux-usb/%{name}-%{version}.tar.xz
-Source1001: 	usbutils.manifest
+Source:         https://www.kernel.org/pub/linux/utils/usb/usbutils/%{name}-%{version}.tar.xz
+Source1001:     usbutils.manifest
 
 Summary:        Linux USB utilities
 Group:          Base/Device Management
@@ -22,13 +22,13 @@ cp %{SOURCE1001} .
 
 %build
 %configure \
-	--datadir=%{_datadir}/hwdata \
+    --datadir=%{_datadir}/hwdata \
     --disable-usbids
 
-make %{?_smp_mflags}
+%__make %{?_smp_mflags}
 
 %install
-make install DESTDIR=%{buildroot} pkgconfigdir=/usr/share/pkgconfig
+%make_install pkgconfigdir=/usr/share/pkgconfig
 
 %docs_package
 
